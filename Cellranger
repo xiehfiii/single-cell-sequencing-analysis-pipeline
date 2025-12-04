@@ -1,0 +1,4 @@
+#cellranger mkref
+nohup cellranger mkref --memgb=200 --genome=wheat --fasta=./Triticum_aestivum.fasta --genes=./Triticum_aestivum.gtf &
+#cellranger count
+nohup cellranger count --id=ck_fcr_15000cells --transcriptome=/home/xiehangfei/scRNAseq/wheat --fastqs=/home/xiehangfei/scRNAseq/CK-FCR --sample=CK-FCR --expect-cells=15000 --localcores=20 --localmem=200 --include-introns=true --create-bam=true &
